@@ -1,0 +1,30 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "name": "mouse Microsoft",
+            "price": 15.90,
+            "sale": false,
+            "priceSale": 0,
+            "image": "mouse.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Teclado Microsoft",
+            "price": 30.90,
+            "sale": false,
+            "priceSale": 0,
+            "image": "teclado.jpg"
+        },   {
+            "id": 1,
+            "name": "Monitor Sansung",
+            "price": 250.00,
+            "sale": false,
+            "priceSale": 0,
+            "image": "monitor.jpg"
+        }
+    ],
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+    ]
+}
