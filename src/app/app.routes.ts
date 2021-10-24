@@ -1,3 +1,4 @@
+import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { HomeComponent } from './../../../minhaAppAngular/src/app/home/home.component';
@@ -11,5 +12,6 @@ export const rootRouterConfig: Routes = [
     // passa o caminho do componente
     { path: 'home', component: HomeComponent },
     { path: 'sobre', component: SobreComponent},
-    { path: 'contato', component: ContatoComponent}
+    { path: 'contato', component: ContatoComponent},
+    { path: 'feature-data-binding', component: DataBindingComponent }
 ];
