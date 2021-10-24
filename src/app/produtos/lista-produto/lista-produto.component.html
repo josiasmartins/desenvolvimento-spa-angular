@@ -5,18 +5,19 @@
         <!--  -->
         <div *ngFor="let produto of produtos" class="col-md-4" style="padding-bottom: 30px;">
             <div class="card h-100">
-                <a class="text-decoration-none">
+                <!-- o primeiro parâmetro é o caminho; o segundo é o id -->
+                <a class="text-decoration-none" [routerLink]="['/produto-detalhe, produto.id']">
                     <div style="align-content:center;">
-                        <img src="../../../assets//6457dc8f063f284fe17e519dc28b5437.jpg" height="164px" width="253px" alt="">
+                        <img src="../../../assets/{{ produto.imagem}}" height="164px" width="253px" alt="">
                     </div>
                 </a>
                 <div class="card-body">
-                    <h4 class="card-title">Nome produto</h4>
+                    <h4 class="card-title">{{ produto.nome }}</h4>
                     <p>Por apenas:</p>
-                    <div><h4>4000</h4></div>
+                    <div><h4>R$ {{ produto.valor }}</h4></div>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary">
+                    <a class="btn btn-primary" [routerLink]="['/carrinho', produto.id]">
                         <span class="fa fa-shoppin-cart"></span> Comprar
                     </a>
                 </div>
