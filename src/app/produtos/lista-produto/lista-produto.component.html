@@ -35,7 +35,7 @@
                 <div *ngIf="!produto.promocao" class="card-body">
                     <!-- utilizando o pipe do angular, que serve para formatar um valor -->
                     <h4 class="card-title">{{ produto.nome | titlecase }}</h4>
-                    <div><h4>{{ produto.valor | currency: 'BRL':true: '1.2-2':'pt'}}</h4></div>
+                    <div><h4>{{ produto.valor | currency: 'BRL':true: 'pt'}}</h4></div>
                 </div> -->
                 <div class="card-footer">
                     <a class="btn btn-primary" [routerLink]="['/carrinho', produto.id]">
