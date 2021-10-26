@@ -4,6 +4,7 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { HomeComponent } from './../../../minhaAppAngular/src/app/home/home.component';
 import { Routes } from '@angular/router'
+import { RouterOutlet } from '@angular/router';
 
 // uma coleção de rotas
 export const rootRouterConfig: Routes = [

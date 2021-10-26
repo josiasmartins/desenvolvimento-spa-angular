@@ -12,7 +12,7 @@ export class ProdutosService {
 
     // precisa de endPoint
     // endPoint é o endereço
-    protected urlServicesV1: string = "http://localhost:300/";
+    protected urlServicesV1: string = "http://localhost:3000/";
 
     // como acessar o endPoint externo?
     // Com o HttpClient, consigo acessar o endPoint externo
